@@ -59,10 +59,8 @@ dockhost compose apply [путь к файлу или url]
 
 ### [MySQL](db/mysql)
 
-
 | [9.0](db/mysql/9.0)                               |
 |---------------------------------------------------|
-| [1CPU-256MB.yaml](db/mysql/9.0/1CPU-256MB.yaml)   |
 | [1CPU-512MB.yaml](db/mysql/9.0/1CPU-512MB.yaml)   |
 | [1CPU-1024MB.yaml](db/mysql/9.0/1CPU-1024MB.yaml) |
 | [1CPU-2048MB.yaml](db/mysql/9.0/1CPU-2048MB.yaml) |

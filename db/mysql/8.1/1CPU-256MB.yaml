@@ -68,7 +68,7 @@ volumes:
 # Containers configuration
 containers:
 
-    postgres:
+    mysql:
         image: mysql:8.1
         replicas: 1
         resources:

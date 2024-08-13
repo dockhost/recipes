@@ -840,7 +840,7 @@ volumes:
 
     postgres:
         type: ssd
-        size: 1Gib
+        size: 5Gib
 
 # Containers configuration
 containers:

@@ -59,10 +59,14 @@ dockhost compose apply [путь к файлу или url]
 
 ### [MySQL](db/mysql)
 
-| [8.1](db/mysql/8.1)                             | [8.0](db/mysql/8.0)                             | [5.7](db/mysql/5.7)                             |
-|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-| [1CPU-256MB.yaml](db/mysql/8.1/1CPU-256MB.yaml) | [1CPU-256MB.yaml](db/mysql/8.0/1CPU-256MB.yaml) | [1CPU-256MB.yaml](db/mysql/5.7/1CPU-256MB.yaml) |
-|                                                 |                                                 | [1CPU-512MB.yaml](db/mysql/5.7/1CPU-512MB.yaml) |
+| [8.1](db/mysql/8.1)                             | [8.0](db/mysql/8.0)                             | [5.7](db/mysql/5.7)                               |
+|-------------------------------------------------|-------------------------------------------------|---------------------------------------------------|
+| [1CPU-256MB.yaml](db/mysql/8.1/1CPU-256MB.yaml) | [1CPU-256MB.yaml](db/mysql/8.0/1CPU-256MB.yaml) | [1CPU-256MB.yaml](db/mysql/5.7/1CPU-256MB.yaml)   |
+|                                                 |                                                 | [1CPU-512MB.yaml](db/mysql/5.7/1CPU-512MB.yaml)   |
+|                                                 |                                                 | [1CPU-1024MB.yaml](db/mysql/5.7/1CPU-1024MB.yaml) |
+|                                                 |                                                 | [1CPU-2048MB.yaml](db/mysql/5.7/1CPU-2048MB.yaml) |
+|                                                 |                                                 | [1CPU-4096MB.yaml](db/mysql/5.7/1CPU-4096MB.yaml) |
+|                                                 |                                                 | [1CPU-8192MB.yaml](db/mysql/5.7/1CPU-8192MB.yaml) |
 
 # Поддержка
 

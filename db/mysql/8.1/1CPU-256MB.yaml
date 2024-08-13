@@ -26,7 +26,6 @@ environment:
             collation_server = utf8mb4_bin
             
             bind-address = 0.0.0.0
-            mysqlx_bind_address = 0.0.0.0
             max_connections = 300
             
             # Remove leading # to turn on a very important data integrity option: logging

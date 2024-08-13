@@ -68,7 +68,7 @@ volumes:
 containers:
 
     mysql:
-        image: mysql:8.0
+        image: mysql:5.6
         replicas: 1
         resources:
             memory: 256MiB

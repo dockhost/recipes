@@ -19,7 +19,7 @@ environment:
 
             # Remove leading # and set to the amount of RAM for the most important data
             # cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.
-            innodb_buffer_pool_size = 180M
+            innodb_buffer_pool_size = 3072M
             innodb_file_per_table = 1
             
             character_set_server = utf8mb4
@@ -62,16 +62,16 @@ volumes:
 
     mysql:
         type: ssd
-        size: 1Gib
+        size: 4Gib
 
 # Containers configuration
 containers:
 
     mysql:
-        image: mysql:8.0
+        image: mysql:9.0
         replicas: 1
         resources:
-            memory: 256MiB
+            memory: 4096MiB
             cpu: 1
             cpuFraction: 20
         ports:

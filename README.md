@@ -28,8 +28,8 @@ Dockhost - это бессерверная платформа для развё�
 
 1. В панели управления [Dockhost](https://my.dockhost.ru) выберите проект, в который хотите выполнить развёртывание
    примера.
-2. В разделе проекта «Обзор» в меню «⋮» выберите пункт «Загрузить конфигурацию», или перейдите в раздел «Конфигурация» /
-   «Файл конфигурации» и в меню «⋮» выберите пункт «Загрузить конфигурацию».
+2. В разделе проекта «Обзор» в меню «⋮» выберите пункт «Загрузить конфигурацию», или перейдите в раздел «Настройки» /
+   «Конфигурация» и в меню «⋮» выберите пункт «Загрузить конфигурацию».
 3. В открывшемся модальном окне укажите адрес к файлу.
 4. Нажмите на кнопку «Загрузить» и дождитесь выполнения результата.
 
@@ -64,18 +64,18 @@ dockhost compose apply [путь к файлу или url]
 
 ### [MySQL](db/mysql)
 
-| [9.0](db/mysql/9.0)                                            |
-|----------------------------------------------------------------|
-| [1CPU-512MB-1SSD.yaml](db/mysql/9.0/1CPU-512MB-1SSD.yaml)      |
-| [1CPU-1024MB-10SSD.yaml](db/mysql/9.0/1CPU-1024MB-10SSD.yaml)  |
-| [1CPU-2048MB-20SSD.yaml](db/mysql/9.0/1CPU-2048MB-20SSD.yaml)  |
-| [1CPU-4096MB-40SSD.yaml](db/mysql/9.0/1CPU-4096MB-40SSD.yaml)  |
-| [1CPU-8192MB-80SSD.yaml](db/mysql/9.0/1CPU-8192MB-80SSD.yaml)  |
-| [2CPU-2048MB-20SSD.yaml](db/mysql/9.0/2CPU-2048MB-20SSD.yaml)  |
-| [2CPU-4096MB-40SSD.yaml](db/mysql/9.0/2CPU-4096MB-40SSD.yaml)  |
-| [2CPU-8192MB-80SSD.yaml](db/mysql/9.0/2CPU-8192MB-80SSD.yaml)  |
-| [4CPU-4096MB-40SSD.yaml](db/mysql/9.0/4CPU-4096MB-40SSD.yaml)  |
-| [4CPU-8192MB-80SSD.yaml](db/mysql/9.0/4CPU-8192MB-80SSD.yaml)  |
+| [9.0](db/mysql/9.0)                                           |
+|---------------------------------------------------------------|
+| [1CPU-512MB-1SSD.yaml](db/mysql/9.0/1CPU-512MB-1SSD.yaml)     |
+| [1CPU-1024MB-10SSD.yaml](db/mysql/9.0/1CPU-1024MB-10SSD.yaml) |
+| [1CPU-2048MB-20SSD.yaml](db/mysql/9.0/1CPU-2048MB-20SSD.yaml) |
+| [1CPU-4096MB-40SSD.yaml](db/mysql/9.0/1CPU-4096MB-40SSD.yaml) |
+| [1CPU-8192MB-80SSD.yaml](db/mysql/9.0/1CPU-8192MB-80SSD.yaml) |
+| [2CPU-2048MB-20SSD.yaml](db/mysql/9.0/2CPU-2048MB-20SSD.yaml) |
+| [2CPU-4096MB-40SSD.yaml](db/mysql/9.0/2CPU-4096MB-40SSD.yaml) |
+| [2CPU-8192MB-80SSD.yaml](db/mysql/9.0/2CPU-8192MB-80SSD.yaml) |
+| [4CPU-4096MB-40SSD.yaml](db/mysql/9.0/4CPU-4096MB-40SSD.yaml) |
+| [4CPU-8192MB-80SSD.yaml](db/mysql/9.0/4CPU-8192MB-80SSD.yaml) |
 
 | [8.4](db/mysql/8.4)                               | [8.3](db/mysql/8.3)                               | [8.2](db/mysql/8.2)                               | [8.1](db/mysql/8.1)                                           |
 |---------------------------------------------------|---------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------|
@@ -91,19 +91,19 @@ dockhost compose apply [путь к файлу или url]
 | [1CPU-8192MB.yaml](db/mysql/8.4/1CPU-8192MB.yaml) | [1CPU-8192MB.yaml](db/mysql/8.3/1CPU-8192MB.yaml) | [1CPU-8192MB.yaml](db/mysql/8.2/1CPU-8192MB.yaml) | [4CPU-4096MB-40SSD.yaml](db/mysql/8.1/4CPU-4096MB-40SSD.yaml) |
 | [1CPU-8192MB.yaml](db/mysql/8.4/1CPU-8192MB.yaml) | [1CPU-8192MB.yaml](db/mysql/8.3/1CPU-8192MB.yaml) | [1CPU-8192MB.yaml](db/mysql/8.2/1CPU-8192MB.yaml) | [4CPU-8192MB-80SSD.yaml](db/mysql/8.1/4CPU-8192MB-80SSD.yaml) |
 
-| [8.0](db/mysql/8.0)                                           | [5.7](db/mysql/5.7)                                           | [5.6](db/mysql/5.6)                                               |
-|---------------------------------------------------------------|---------------------------------------------------------------|-------------------------------------------------------------------|
-| [1CPU-256MB-1SSD.yaml](db/mysql/8.0/1CPU-256MB-1SSD.yaml)     | [1CPU-256MB-1SSD.yaml](db/mysql/5.7/1CPU-256MB-1SSD.yaml)     | [1CPU-256MB-1SSD.yaml](db/mysql/5.6/1CPU-256MB-1SSD.yaml)         |
-| [1CPU-512MB-1SSD.yaml](db/mysql/8.0/1CPU-512MB-1SSD.yaml)     | [1CPU-512MB-1SSD.yaml](db/mysql/5.7/1CPU-512MB-1SSD.yaml)     | [1CPU-512MB-1SSD.yaml](db/mysql/5.6/1CPU-512MB-1SSD.yaml)         |
-| [1CPU-1024MB-10SSD.yaml](db/mysql/8.0/1CPU-1024MB-10SSD.yaml) | [1CPU-1024MB-10SSD.yaml](db/mysql/5.7/1CPU-1024MB-10SSD.yaml) | [1CPU-1024MB-10SSD.yaml](db/mysql/5.6/1CPU-1024MB-10SSD.yaml)     |
-| [1CPU-2048MB-20SSD.yaml](db/mysql/8.0/1CPU-2048MB-20SSD.yaml) | [1CPU-2048MB-20SSD.yaml](db/mysql/5.7/1CPU-2048MB-20SSD.yaml) | [1CPU-2048MB-20SSD.yaml](db/mysql/5.6/1CPU-2048MB-20SSD.yaml)     |
-| [1CPU-4096MB-40SSD.yaml](db/mysql/8.0/1CPU-4096MB-40SSD.yaml) | [1CPU-4096MB-40SSD.yaml](db/mysql/5.7/1CPU-4096MB-40SSD.yaml) | [1CPU-4096MB-40SSD.yaml](db/mysql/5.6/1CPU-4096MB-40SSD.yaml)     |
-| [1CPU-8192MB-80SSD.yaml](db/mysql/8.0/1CPU-8192MB-80SSD.yaml) | [1CPU-8192MB-80SSD.yaml](db/mysql/5.7/1CPU-8192MB-80SSD.yaml) | [1CPU-8192MB-80SSD.yaml](db/mysql/5.6/1CPU-8192MB-80SSD.yaml)     |
-| [2CPU-2048MB-20SSD.yaml](db/mysql/8.0/2CPU-2048MB-20SSD.yaml) | [2CPU-2048MB-20SSD.yaml](db/mysql/5.7/2CPU-2048MB-20SSD.yaml) | [2CPU-2048MB-20SSD.yaml](db/mysql/5.6/2CPU-2048MB-20SSD.yaml)     |
-| [2CPU-4096MB-40SSD.yaml](db/mysql/8.0/2CPU-4096MB-40SSD.yaml) | [2CPU-4096MB-40SSD.yaml](db/mysql/5.7/2CPU-4096MB-40SSD.yaml) | [2CPU-4096MB-40SSD.yaml](db/mysql/5.6/2CPU-4096MB-40SSD.yaml)     |
-| [2CPU-8192MB-80SSD.yaml](db/mysql/8.0/2CPU-8192MB-80SSD.yaml) | [2CPU-8192MB-80SSD.yaml](db/mysql/5.7/2CPU-8192MB-80SSD.yaml) | [2CPU-8192MB-80SSD.yaml](db/mysql/5.6/2CPU-8192MB-80SSD.yaml)     |
-| [4CPU-4096MB-40SSD.yaml](db/mysql/8.0/4CPU-4096MB-40SSD.yaml) | [4CPU-4096MB-40SSD.yaml](db/mysql/5.7/4CPU-4096MB-40SSD.yaml) | [4CPU-4096MB-40SSD.yaml](db/mysql/5.6/4CPU-4096MB-40SSD.yaml)     |
-| [4CPU-8192MB-80SSD.yaml](db/mysql/8.0/4CPU-8192MB-80SSD.yaml) | [4CPU-8192MB-80SSD.yaml](db/mysql/5.7/4CPU-8192MB-80SSD.yaml) | [4CPU-8192MB-80SSD.yaml](db/mysql/5.6/4CPU-8192MB-80SSD.yaml)     |
+| [8.0](db/mysql/8.0)                                           | [5.7](db/mysql/5.7)                                           | [5.6](db/mysql/5.6)                                           |
+|---------------------------------------------------------------|---------------------------------------------------------------|---------------------------------------------------------------|
+| [1CPU-256MB-1SSD.yaml](db/mysql/8.0/1CPU-256MB-1SSD.yaml)     | [1CPU-256MB-1SSD.yaml](db/mysql/5.7/1CPU-256MB-1SSD.yaml)     | [1CPU-256MB-1SSD.yaml](db/mysql/5.6/1CPU-256MB-1SSD.yaml)     |
+| [1CPU-512MB-1SSD.yaml](db/mysql/8.0/1CPU-512MB-1SSD.yaml)     | [1CPU-512MB-1SSD.yaml](db/mysql/5.7/1CPU-512MB-1SSD.yaml)     | [1CPU-512MB-1SSD.yaml](db/mysql/5.6/1CPU-512MB-1SSD.yaml)     |
+| [1CPU-1024MB-10SSD.yaml](db/mysql/8.0/1CPU-1024MB-10SSD.yaml) | [1CPU-1024MB-10SSD.yaml](db/mysql/5.7/1CPU-1024MB-10SSD.yaml) | [1CPU-1024MB-10SSD.yaml](db/mysql/5.6/1CPU-1024MB-10SSD.yaml) |
+| [1CPU-2048MB-20SSD.yaml](db/mysql/8.0/1CPU-2048MB-20SSD.yaml) | [1CPU-2048MB-20SSD.yaml](db/mysql/5.7/1CPU-2048MB-20SSD.yaml) | [1CPU-2048MB-20SSD.yaml](db/mysql/5.6/1CPU-2048MB-20SSD.yaml) |
+| [1CPU-4096MB-40SSD.yaml](db/mysql/8.0/1CPU-4096MB-40SSD.yaml) | [1CPU-4096MB-40SSD.yaml](db/mysql/5.7/1CPU-4096MB-40SSD.yaml) | [1CPU-4096MB-40SSD.yaml](db/mysql/5.6/1CPU-4096MB-40SSD.yaml) |
+| [1CPU-8192MB-80SSD.yaml](db/mysql/8.0/1CPU-8192MB-80SSD.yaml) | [1CPU-8192MB-80SSD.yaml](db/mysql/5.7/1CPU-8192MB-80SSD.yaml) | [1CPU-8192MB-80SSD.yaml](db/mysql/5.6/1CPU-8192MB-80SSD.yaml) |
+| [2CPU-2048MB-20SSD.yaml](db/mysql/8.0/2CPU-2048MB-20SSD.yaml) | [2CPU-2048MB-20SSD.yaml](db/mysql/5.7/2CPU-2048MB-20SSD.yaml) | [2CPU-2048MB-20SSD.yaml](db/mysql/5.6/2CPU-2048MB-20SSD.yaml) |
+| [2CPU-4096MB-40SSD.yaml](db/mysql/8.0/2CPU-4096MB-40SSD.yaml) | [2CPU-4096MB-40SSD.yaml](db/mysql/5.7/2CPU-4096MB-40SSD.yaml) | [2CPU-4096MB-40SSD.yaml](db/mysql/5.6/2CPU-4096MB-40SSD.yaml) |
+| [2CPU-8192MB-80SSD.yaml](db/mysql/8.0/2CPU-8192MB-80SSD.yaml) | [2CPU-8192MB-80SSD.yaml](db/mysql/5.7/2CPU-8192MB-80SSD.yaml) | [2CPU-8192MB-80SSD.yaml](db/mysql/5.6/2CPU-8192MB-80SSD.yaml) |
+| [4CPU-4096MB-40SSD.yaml](db/mysql/8.0/4CPU-4096MB-40SSD.yaml) | [4CPU-4096MB-40SSD.yaml](db/mysql/5.7/4CPU-4096MB-40SSD.yaml) | [4CPU-4096MB-40SSD.yaml](db/mysql/5.6/4CPU-4096MB-40SSD.yaml) |
+| [4CPU-8192MB-80SSD.yaml](db/mysql/8.0/4CPU-8192MB-80SSD.yaml) | [4CPU-8192MB-80SSD.yaml](db/mysql/5.7/4CPU-8192MB-80SSD.yaml) | [4CPU-8192MB-80SSD.yaml](db/mysql/5.6/4CPU-8192MB-80SSD.yaml) |
 
 # Поддержка
 

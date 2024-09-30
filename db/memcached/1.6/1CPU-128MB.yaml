@@ -1,0 +1,16 @@
+version: 1
+
+# Containers configuration
+containers:
+    
+    memcached:
+        image: memcached:1.6
+        replicas: 1
+        resources:
+            memory: 128MiB
+            cpu: 1
+            cpuFraction: 20
+        ports:
+        - 11212
+        cmd:
+        - -m 128

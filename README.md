@@ -46,6 +46,19 @@ dockhost compose apply [путь к файлу или url]
 
 ## [Базы данных](db)
 
+### [Memcached](db/memcached)
+
+| [1.6](db/memcached/1.6)                            | [1.5](db/memcached/1.5)                            |
+|----------------------------------------------------|----------------------------------------------------|
+| [1CPU-128MB](db/memcached/1.6/1CPU-128MB.yaml)     | [1CPU-128MB](db/memcached/1.5/1CPU-128MB.yaml)     |
+| [1CPU-256MB](db/memcached/1.6/1CPU-256MB.yaml)     | [1CPU-256MB](db/memcached/1.5/1CPU-256MB.yaml)     |
+| [1CPU-512MB](db/memcached/1.6/1CPU-512MB.yaml)     | [1CPU-512MB](db/memcached/1.5/1CPU-512MB.yaml)     |
+| [1CPU-1024MB](db/memcached/1.6/1CPU-1024MB.yaml)   | [1CPU-1024MB](db/memcached/1.5/1CPU-1024MB.yaml)   |
+| [1CPU-2048MB](db/memcached/1.6/1CPU-2048MB.yaml)   | [1CPU-2048MB](db/memcached/1.5/1CPU-2048MB.yaml)   |
+| [1CPU-4096MB](db/memcached/1.6/1CPU-4096MB.yaml)   | [1CPU-4096MB](db/memcached/1.5/1CPU-4096MB.yaml)   |
+| [1CPU-8192MB](db/memcached/1.6/1CPU-8192MB.yaml)   | [1CPU-8192MB](db/memcached/1.5/1CPU-8192MB.yaml)   |
+| [1CPU-16384MB](db/memcached/1.6/1CPU-16384MB.yaml) | [1CPU-16384MB](db/memcached/1.5/1CPU-16384MB.yaml) |
+
 ### [PostgreSQL](db/postgres)
 
 | [16](db/postgres/16)                                            | [15](db/postgres/15)                                            | [14](db/postgres/14)                                            |

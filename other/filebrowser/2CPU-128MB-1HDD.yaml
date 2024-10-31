@@ -1,0 +1,102 @@
+version: 1
+
+# Environments configuration
+environment:
+
+    configs:
+
+        nginx.conf: |
+            server {
+                listen 80 default_server;
+                server_name localhost;
+            
+                charset utf-8;
+                index index.html index.htm;
+            
+                error_log /dev/stderr;
+                access_log /dev/stdout;
+            
+                root /usr/share/nginx/html;
+            
+                location / {
+                    try_files $uri =404;
+                }
+            }
+
+        filebrowser.json: |
+            {
+                "port": 80,
+                "baseURL": "",
+                "address": "",
+                "log": "stdout",
+                "database": "/database/database.db",
+                "root": "/srv"
+            }
+
+# Volumes configuration
+volumes:
+
+    data:
+        type: hdd
+        size: 1Gib
+
+# Containers configuration
+containers:
+
+    nginx:
+        image: nginx
+        replicas: 1
+        resources:
+            memory: 64MiB
+            cpu: 1
+            cpuFraction: 5
+        ports:
+        - 80
+        configs:
+        -   name: nginx.conf
+            mountPath: /etc/nginx/conf.d/default.conf
+        volumes:
+        -   name: data
+            mountPath: /usr/share/nginx/html
+            subPath: nginx
+
+    filebrowser:
+        image: filebrowser/filebrowser
+        replicas: 1
+        resources:
+            memory: 64MiB
+            cpu: 1
+            cpuFraction: 5
+        ports:
+        - 80
+        configs:
+        -   name: filebrowser.json
+            mountPath: /.filebrowser.json
+        volumes:
+        -   name: data
+            mountPath: /srv
+            subPath: nginx
+        -   name: data
+            mountPath: /database
+            subPath: filebrowser
+
+    network:
+
+        domains:
+
+            nginx: ~
+            filebrowser: ~
+
+        routes:
+
+            nginx:
+                domain: nginx
+                path: /
+                service: nginx
+                port: 80/TCP
+
+            filebrowser:
+                domain: filebrowser
+                path: /
+                service: filebrowser
+                port: 80/TCP

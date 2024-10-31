@@ -80,23 +80,24 @@ containers:
             mountPath: /database
             subPath: filebrowser
 
-    network:
+# Network configuration
+network:
 
-        domains:
+    domains:
 
-            nginx: ~
-            filebrowser: ~
+        nginx: ~
+        filebrowser: ~
 
-        routes:
+    routes:
 
-            nginx:
-                domain: nginx
-                path: /
-                service: nginx
-                port: 80/TCP
+        nginx:
+            domain: nginx
+            path: /
+            service: nginx
+            port: 80/TCP
 
-            filebrowser:
-                domain: filebrowser
-                path: /
-                service: filebrowser
-                port: 80/TCP
+        filebrowser:
+            domain: filebrowser
+            path: /
+            service: filebrowser
+            port: 80/TCP
